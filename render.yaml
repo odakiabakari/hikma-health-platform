@@ -15,6 +15,7 @@ services:
   - type: web
     name: "hikma-health-server"
     runtime: node
+    region: frankfurt
     # Uncomment if you want to deploy to the free tier first.
     # NOTE: free tier has degraded performance making it unusable in real world settings
     # plan: free
@@ -45,6 +46,7 @@ databases:
     # plan: free
     databaseName: hhdb
     user: hikma
+    region: frankfurt
     # highAvailability:
     # enabled: true
 # Define any additional services or database configurations if needed
